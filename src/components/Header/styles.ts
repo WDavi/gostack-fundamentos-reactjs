@@ -23,6 +23,8 @@ export const Container = styled.div<ContainerProps>`
         font-size: 16px;
         transition: opacity 0.2s;
 
+        padding: 10px 0;
+
         & + a {
           margin-left: 32px;
         }
@@ -30,6 +32,14 @@ export const Container = styled.div<ContainerProps>`
         &:hover {
           opacity: 0.6;
         }
+      }
+
+      a.currentPage {
+        border: 2px solid #ff872c;
+        border-left: 0;
+        border-top: 0;
+        border-right: 0;
+        font-weight: 600;
       }
     }
   }
